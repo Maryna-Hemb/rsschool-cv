@@ -1,2 +1,3 @@
-# rsschool-cv
-<https://Maryna-Hemb.github.io/rsschool-cv/cv> 
+# rsschool-
+
+https://Maryna-Hemb.github.io/rsschool-cv/cv
