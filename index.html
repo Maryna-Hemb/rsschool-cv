@@ -1,12 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>CV</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    >
+    <!-- modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <!-- custom styless -->
+    <link rel="stylesheet" href="./css/style.css" >
+  </head>
+  <body>
+    <header class="header" id="home">
+      <div class="container header__container">
+        <nav class="main-nav">
+          <ul class="main-nav__list main-nav__list--mobile list">
+            <li class="main-nav__item">
+              <a
+                href="./index.html"
+                class="main-nav__link link"
+                aria-label="home"
+                >Home</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a href="#about" class="main-nav__link link" aria-label="about me"
+                >About me</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a
+                href="#tech-skills"
+                class="main-nav__link link"
+                aria-label="Tech-Skills"
+                >Tech Skills</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a
+                href="#work-experience"
+                class="main-nav__link link"
+                aria-label="Work experience"
+                >Work experience</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a
+                href="#education"
+                class="main-nav__link link"
+                aria-label="education"
+                >Education</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a
+                href="#languages"
+                class="main-nav__link link"
+                aria-label="languages"
+                >Languages</a
+              >
+            </li>
+            <li class="menu-btn">
+              <!-- start button mobile and tablet menu -->
+              <button
+                class="menu-btn js-open-menu"
+                type="button"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+              >
+                <svg class="menu-btn__icon" width="32" height="32">
+                  <use href="./assets/images/sprite.svg#burger"></use>
+                </svg>
+              </button>
+              <!-- end button mobile and tablet menu -->
+            </li>
+            <li class="main-nav__item-btn">
+              <button
+                type="button"
+                class="button header__btn js-open-modal"
+                aria-label="contact me"
+                data-buy-now-open
+              >
+                Contact me
+                <svg class="btn__arrow-icon" width="12" height="12">
+                  <use href="./assets/images/sprite.svg#btn-arrow"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- header menu layout-->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-btn-close js-close-menu">
+            <svg class="menu-btn__icon" width="32" height="32">
+              <use
+                href="./assets/images/sprite.svg#modal-close-btn-white"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="main-nav__list-mobile list">
+            <li class="main-nav__item-mobile">
+              <a
+                href="./index.html"
+                class="main-nav__link-mobile link"
+                data-nav-link
+                aria-label="home"
+                >Home</a
+              >
+            </li>
+            <li class="main-nav__item-mobile">
+              <a
+                href="#about"
+                class="main-nav__link-mobile link"
+                aria-label="about"
+                data-nav-link
+                >How it’s made?</a
+              >
+            </li>
+            <li class="main-nav__item-mobile">
+              <a
+                href="#products"
+                class="main-nav__link-mobile link"
+                aria-label="products"
+                data-nav-link
+                >Our products</a
+              >
+            </li>
+            <li class="main-nav__item-mobile">
+              <a
+                href="#contacts"
+                class="main-nav__link-mobile link"
+                aria-label="contact"
+                data-nav-link
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <button
+            type="button"
+            class="button header__btn-mobile"
+            aria-label="buy now"
+            data-buy-now-menu-open
+          >
+            Buy now
+            <svg class="btn__arrow-icon" width="12" height="12">
+              <use href="./assets/images/sprite.svg#btn-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="about">
+        <div class="container hero__container">
+          <h1 class="main-title">Maryna Hembarska</h1>
+          <div class="hero__content">
+            <div class="hero__text">
+              <h2 class="second-title">About me</h2>
+              <p class="text__information">
+                I'm a responsible person who always leads work to its full
+                implementation. Enjoy working and want to make beautiful and
+                human-friendly websites. I have team and individual work
+                experience. Capable of learning from senior developers. I eager
+                to tackle more complex problems and continue to find ways to
+                maximize user efficiency. With a passion for both personal
+                growth and for software development, I spend my time studying.
+              </p>
+            </div>
+            <img
+              src="./assets/images/photo.jpg"
+              alt="my photo"
+              class="photo"
+              width="400"
+              height="400"
+            >
+          </div>
+        </div>
+      </section>
+      <section class="tech" id="tech-skills">
+        <div class="container container__tech">
+          <h2 class="second-title second-title__tech">Tech Skills</h2>
+          <ul class="tech-list">
+            <li class="tech-list__item tech-list__item--four list">HTML</li>
+            <li class="tech-list__item tech-list__item--four list">CSS</li>
+            <li class="tech-list__item tech-list__item--three list">SASS</li>
+            <li class="tech-list__item tech-list__item--two list">GIT</li>
+            <li class="tech-list__item tech-list__item--three list">Figma</li>
+            <li class="tech-list__item tech-list__item--one list">
+              JavaScript
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="work-experience" id="work-experience">
+        <div class="container work-experience__container">
+          <div class="work-experience__part">
+            <h2 class="second-title">Work Experience</h2>
+            <p class="text__information work-experience__information">
+              During studying I've made markup and styling both for landing
+              pages and homepage with inner pages. The BEM methodology (naming
+              mainly) and SASS preprocessor were used in my projects. I have
+              experience in responsive and liquid web design, using Mobile-first
+              strategy and designing the pixel-perfect layout. I can work with
+              Figma and Photoshop.
+            </p>
+
+            <h3 class="third-title">Work examples</h3>
+            <ol class="work-examples">
+              <li>
+                <a
+                  class="work-examples__list"
+                  href="https://Maryna-Hemb.github.io/rsschool-cv/"
+                  >My CV</a
+                >
+              </li>
+            </ol>
+          </div>
+          <div class="code-example">
+            <h2 class="second-title">Code example</h2>
+            <h3 class="third-title">Task</h3>
+            <code class="code-text">
+              16 = 1 + 6 = 7; 942 = 9 + 4 +2 = 15 = 1 + 5 = 6; 132189 = 1 + 3 +
+              2 + 1 + 8 + 9 = 24 = 2 + 4= 6;
+            </code>
+            <h3 class="third-title">Solution</h3>
+            <code class="code-text">
+              ```javascript function digitalRoot(n) { let array =
+              n.toString().split(''); let sum = 0; array.forEach((element) =>
+              {sum += Number(element)}); n = sum; if(n.toString().length > 1) {
+              return digitalRoot(n)}; return n; }
+            </code>
+          </div>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <div class="container education__container">
+          <h2 class="second-title__education">Education</h2>
+          <ul class="education-item">
+            <li class="education-list list">
+              <p class="logo uppercase">The Rolling Scopes SCHOOL</p>
+              <p class="education-list__text">JS/FE Pre-School 2022Q4</p>
+              <p class="education-list__text">12.2022 - up to now</p>
+            </li>
+
+            <li class="education-list list">
+              <p class="logo">
+                <span class="logo uppercase">Go</span>
+                <span class="logo-it uppercase">IT</span> (EdTech company)
+              </p>
+              <p class="education-list__text">Ukraine, Kyiv</p>
+              <p class="education-list__text">FullStack developer</p>
+              <p class="education-list__text">08.2022 - up to now</p>
+            </li>
+            <li class="education-list list">
+              <p class="logo">
+                National Technical University of Ukraine “Igor Sikorsky Kyiv
+                Polytechnic Institute”
+              </p>
+              <p class="education-list__text">Ukraine, Kyiv</p>
+              <p class="education-list__text">Department of Geoengineering</p>
+              <p class="education-list__text">09.2004 - 05.2010</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="languages" id="languages">
+        <div class="container">
+          <h2 class="second-title__languages">Languages</h2>
+          <ul class="languages-item">
+            <li class="languages-list list">
+              <p class="logo">Ukrainian</p>
+              <p class="languages-list__text">native</p>
+            </li>
+            <li class="languages-list list">
+              <p class="logo">English</p>
+              <p class="languages-list__text">B2</p>
+            </li>
+            <li class="languages-list list">
+              <p class="logo">German</p>
+              <p class="languages-list__text">beginer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer_grid">
+        <a href="https://rs.school/js/" class="rss-logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Rolling Scopes School Logo"
+            class="rsschool-logo"
+            style="height: 30px; width: auto"
+          >
+        </a>
+        <h2 class="visually-hidden" id="#contacts">Contacts</h2>
+        <ul class="contacts">
+          <li class="list link-list">
+            <a
+              class="github link"
+              href="https://github.com/Maryna-Hemb"
+              target="_blank"
+            >
+              Github</a
+            >
+          </li>
+          <li class="list link-list">
+            <a
+              class="codewards-icon link"
+              href="https://www.codewars.com/users/Maryna-Hemb"
+              target="_blank"
+            >
+              Codewars</a
+            >
+          </li>
+        </ul>
+        <p class="edit">December 2022</p>
+      </div>
+    </footer>
+  </body>
 </html>
